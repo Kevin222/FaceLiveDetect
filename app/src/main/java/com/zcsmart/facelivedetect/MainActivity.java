@@ -14,6 +14,7 @@ import com.hisign.CTID.facelivedetection.CTIDLiveDetectActivity;
 
 
 public class MainActivity extends Activity {
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +24,8 @@ public class MainActivity extends Activity {
     public void clickButton(View view){
         switch (view.getId()){
             case R.id.btn:
-                startActivity(new Intent(this, CTIDLiveDetectActivity.class));
+                Intent intent = new Intent(this, CTIDLiveDetectActivity.class);
+                startActivity(intent);
                 break;
         }
     }

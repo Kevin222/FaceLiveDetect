@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ctid_white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@color/ctid_bg_blue"
+                android:fadeScrollbars="false"
+                android:gravity="center_vertical"
+                android:scrollbars="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/ctid_str_main"
+                    android:textColor="@color/ctid_white"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+              
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="采集过程中请您根据语音\n动画提示进行操作"
+                    android:textSize="14sp" />
+
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/sucessd_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="采集过"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/fail_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="采集过程"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="158dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_logo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ctid_forntali_just" />
+
+                <ImageView
+                    android:id="@+id/img_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ctid_forntali_just"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:fadeScrollbars="false"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_success"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ctid_success"
+                    android:scaleType="centerInside"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_fail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ctid_fail"
+                    android:scaleType="centerInside"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/infotest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="采集过程中"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/infotestrezion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:text="1.请在光线充足的地方进行认证。"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/infotestrezion2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:text="2.请注意画面中提示的动作。"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/infotestrezion3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:text="3.请在提示语音结束后做相应的动作。"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/infotestrezion4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:text="4.请上下小幅度晃动手机。"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_start"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/img_logo"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ctid_btn_start" />
+
+            <LinearLayout
+                android:id="@+id/ll_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/img_logo"
+                android:layout_marginRight="60dp"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/btn_quality_judge"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/ctid_str_main_btn_quality_judge"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btn_start_check"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/ctid_str_main_btn_start_check" />
+
+                <Button
+                    android:id="@+id/btn_setting"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/ctid_str_main_btn_setting"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:gravity="left"
+            android:text="厂商号:"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:gravity="left"
+            android:text="0"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:gravity="left"
+            android:text="0"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:gravity="left"
+            android:text="0"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/productcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:gravity="left"
+            android:text="0"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:gravity="left"
+            android:text="版本号:"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/vercode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:gravity="left"
+            android:text="0000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

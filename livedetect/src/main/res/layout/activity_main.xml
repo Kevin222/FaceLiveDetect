@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top"
+    tools:context=".CTIDMainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+          
+        <Button
+            android:id="@+id/Button01"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="SM3哈希测试"
+            android:textSize="20dp" />
+
+      
+
+        <Button
+            android:id="@+id/button4"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="SHA256哈希测试"
+            android:textSize="20dp" />
+        
+         <Button
+             android:id="@+id/button5"
+             style="?android:attr/buttonStyleSmall"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:text="数字信封测试"
+             android:textSize="20dp" />
+         <Button
+             android:id="@+id/button6"
+             style="?android:attr/buttonStyleSmall"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:text="验签测试"
+             android:textSize="20dp" />
+          <Button
+             android:id="@+id/button7"
+             style="?android:attr/buttonStyleSmall"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:text="挑战数接口测试"
+             android:textSize="20dp"
+             android:visibility="gone" />
+          <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="一所验签测试"
+            android:textSize="20dp"
+            android:visibility="gone" />
+           <Button
+            android:id="@+id/button2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="一所加密测试"
+            android:textSize="20dp" 
+            android:visibility="gone"/>
+           <Button
+            android:id="@+id/button21"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="一所加密错误测试"
+            android:textSize="20dp"
+            android:visibility="gone" />
+           <Button
+            android:id="@+id/button22"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="一所多次加密测试"
+            android:textSize="20dp" 
+            android:visibility="gone"/>
+           <Button
+            android:id="@+id/button3"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="读证书信息"
+            android:textSize="20dp"
+            android:visibility="gone" />
+          
+           <Button
+             android:id="@+id/button8"
+             style="?android:attr/buttonStyleSmall"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:text="清空信息"
+             android:textSize="20dp" />
+           
+            <Button
+             android:id="@+id/button9"
+             style="?android:attr/buttonStyleSmall"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:text="退出"
+             android:textSize="20dp" />
+            <Button
+             android:id="@+id/button10"
+             style="?android:attr/buttonStyleSmall"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:text="一所加密信息"
+             android:textSize="20dp" 
+             android:visibility="gone"/>
+            
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:background ="#ddd"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="2.0"
+            android:singleLine="false"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+ 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="20.0"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+</RelativeLayout>

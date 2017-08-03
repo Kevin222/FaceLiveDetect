@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top|left"
+    android:orientation="vertical" >
+
+    <!-- SurfaceView -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@color/ctid_main_bg" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:gravity="center" >
+
+            <SurfaceView
+                android:id="@+id/sfv_preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top" />
+        </LinearLayout>
+
+        <com.hisign.CTID.utilty.SurfaceDraw
+            android:id="@+id/surfaceView01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top" />
+
+        <!-- 倒计时 -->
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+           
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+                 <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    
+                    android:layout_weight="2" >
+
+                    <TextView
+                      
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:textColor="#90000000"
+                        android:textSize="12sp"
+                        android:text="倒计时" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                     android:background="#90e3170d"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/hisign_tv_fist"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:src="@drawable/ctid_img_2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                     android:background="#90e3170d"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/hisign_tv_second"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:src="@drawable/ctid_img_0" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:text="20"
+                android:textColor="@color/ctid_white"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal|top"
+            android:paddingTop="80dp"
+            android:text="4521574545"
+            android:textColor="@color/ctid_red"
+            android:textSize="23sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/facemake_fist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:background="@drawable/ctid_line"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/facemake_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="1"
+                    android:src="@drawable/ctid_face_make"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/iiiumine_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="jdjs"
+                    android:textColor="@color/ctid_red"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="100dp" >
+
+                    <TextView
+                        android:id="@+id/iiiumine_tv_s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="#90000000"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="jdjs"
+                        android:textColor="@color/ctid_white"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/anim_head_RelativeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible" >
+
+                        <LinearLayout
+                            android:id="@+id/ll_gaze3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <ImageView
+                                android:id="@+id/ll_gazeiv3"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/ctid_forntali_just"
+                                android:contentDescription="@string/ctid_look_at_me"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_shake"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <ImageView
+                                android:id="@+id/img_shake"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/ctid_miaodaianim" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_nod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <ImageView
+                                android:id="@+id/img_nod"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/ctid_miaodaianimnod"
+                                android:contentDescription="@string/ctid_look_at_me" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <ImageView
+                                android:id="@+id/img_left"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/ctid_success_6" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <ImageView
+                                android:id="@+id/img_right"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/ctid_miaodaianimright"
+                                android:contentDescription="@string/ctid_look_at_me"
+                                android:visibility="visible" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 底部动画 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_message"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#90000000"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="请将脸部置于提示框中"
+                    android:textColor="@color/ctid_white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:background="#000000" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="#000000" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ctid_img_bag_botn" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 控制按钮 -->
+
+
+    <!-- 引导提示框 -->
+
+    <RelativeLayout
+        android:id="@+id/countdown_anim_RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp" >
+
+            <ImageView
+                android:id="@+id/img_wait"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                
+                android:background="@android:color/transparent"
+                android:src="@drawable/ctid_img_wait" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/img_count1"
+                    android:layout_width="90dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/ctid_app_name_overlight"
+                    android:src="@drawable/ctid_img_count_1"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_count2"
+                    android:layout_width="90dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/ctid_app_name_overlight"
+                    android:src="@drawable/ctid_img_count_2"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_count"
+                    android:layout_width="90dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/ctid_app_name_overlight"
+                    android:src="@drawable/ctid_img_count_3" />
+            </RelativeLayout>
+
+           
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

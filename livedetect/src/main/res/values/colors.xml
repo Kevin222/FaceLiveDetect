@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<color name="ctid_main_bg">#d5d5d5</color>
+    <color name="ctid_white">#FFFFFF</color>
+    <color name="ctid_black">#000000</color>
+    <color name="ctid_orange">#FF7F00</color>
+    
+    <color name="ctid_blue">#0000FF</color>
+    <color name="ctid_red">#FFFF3333</color>
+    <color name="ctid_green">#FF33FF33</color>
+    <color name="ctid_txt_blue">#FF3333FF</color>
+    <color name="ctid_bg_green">#009900</color>
+    <color name="ctid_bg_blue">#48a1dd</color>
+     <color name="ctid_bg_bluelight">#4fc3f7</color>
+</resources>
+

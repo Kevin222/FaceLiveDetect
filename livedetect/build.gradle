@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
-
+apply plugin: 'maven'
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -9,7 +9,7 @@ android {
         minSdkVersion 19
         targetSdkVersion 25
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -56,3 +56,19 @@ publish {
     website = "https://github.com/novoda/${rootProject.name}"
 }
 
+group 'com.zcsmart.ccks'
+uploadArchives {
+    repositories.mavenDeployer {
+        snapshotRepository(url: "http://219.141.206.18:18081/nexus/content/repositories/snapshots/") {
+            authentication(userName: "deployment", password: "dePloy_csc_PUBlic_nexuS")
+        }
+        repository(url: "http://219.141.206.18:18081/nexus/content/repositories/releases/") {
+            authentication(userName: "deployment", password: "dePloy_csc_PUBlic_nexuS")
+        }
+
+        pom.version = android.defaultConfig.versionName
+        pom.artifactId = 'livedetect'
+        pom.name = 'livedetect'
+        pom.packaging = 'aar'
+    }
+}
